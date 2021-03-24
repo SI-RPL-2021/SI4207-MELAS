@@ -1,0 +1,110 @@
+:root {
+  --bg-yellow: #fec111;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header .navbar {
+  background-color: var(--bg-yellow);
+  border-bottom: 1px solid black;
+}
+
+.topBar a {
+  color: black;
+  text-decoration: none;
+}
+
+main {
+  background: #245b80;
+
+  min-height: 90vh;
+}
+
+main .title-bar {
+  padding: 5px;
+  background: #ec4545;
+}
+
+main .navbar-nav {
+  font-size: 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo a {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.logo img {
+  height: 2rem;
+  object-fit: contain;
+}
+
+.content .list-portal {
+  align-self: center;
+  width: 85%;
+  /* background: red; */
+}
+
+.content .card-berita {
+  margin-top: 1rem;
+  border: 2px solid black;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 10px;
+  background: #c4c4c4;
+}
+
+.content .card-berita p {
+  font-weight: bold;
+  font-size: 20px;
+  display: block;
+  width: 80%;
+  margin-left: 1rem;
+  /* overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; */
+}
+
+.content .card-berita p {
+  font-weight: bold;
+  font-size: 20px;
+  display: block;
+  width: 80%;
+  margin-left: 1rem;
+  /* overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; */
+}
+
+.content .card-berita img {
+  margin-right: 1rem;
+  border: 2px solid black;
+  height: 7rem;
+  width: 20%;
+}
+
+.content .list-portal a {
+  color: white;
+  align-self: flex-end;
+  margin-top: 2rem;
+  font-size: 600;
+  text-decoration: none;
+}
+
+footer {
+  background: white;
+  height: 2rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  border-top: 2px solid black;
+}

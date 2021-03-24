@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+}
+
+.topBar a {
+  color: black;
+  text-decoration: none;
+}
+
+main {
+  background: #245b80;
+
+  height: 90%;
+}
+
+main .navbar {
+  padding: 15px;
+}
+
+main .navbar-nav {
+  font-size: 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo a {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.logo img {
+  height: 2rem;
+  object-fit: contain;
+}
+
+.carousel .carousel-item img {
+  height: 60vh;
+  width: 100%;
+  /* object-fit: contain; */
+  position: relative;
+}
+
+.carousel .carousel-inner .carousel-caption {
+  top: 60%;
+  transform: translateY(-50%);
+}
+
+.carousel .carousel-inner .carousel-caption h1 {
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.content p {
+  align-self: center;
+  color: white;
+  font-weight: 600;
+  max-width: 35%;
+  text-align: center;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+footer {
+  /* text-align: center; */
+
+  background: white;
+  height: 5%;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  border-top: 2px solid black;
+}
