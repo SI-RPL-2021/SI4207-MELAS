@@ -18,23 +18,27 @@
 
 <header>
     <nav class="navbar navbar-expand-lg navbar-light">
-
+        <ul class="navbar-nav">
+            <div class="logo ml-2">
+                <img src="../assets/logo.png" alt="" srcset="">
+                <a class="navbar-brand" style="color: navy; margin-left: 2mm;" href="#"> <b>MELAS</b></a>
+            </div>
+        </ul>
         <ul class="navbar-nav ml-auto">
-            <div class="my-2 my-lg-0 d-flex align-items-center topBar">
-                <div class="mr-5">
-                <a href="home.php" class="font-weight-bold">Home</a>
+                <div class="my-2 my-lg-0 d-flex align-items-center topBar">
+                    <div class="mr-5">
+                        <a href="home.php" class="font-weight-bold">Home</a>
+                    </div>
+                    <div class="hello d-flex mr-5">
+                        <span class="my-2 my-sm-0 mr-1"><i class="fas fa-user-circle"></i></span>
+                        <a class="my-2 my-sm-0 font-weight-bold" href="#">Hai,
+                            <?php echo  $_SESSION["user"]["nama"] ?>
+                        </a>
+                    </div>
+                <div class="d-flex ml-4 mr-4">
+                    <span class="mr-1"><i class="fas fa-sign-out-alt"></i></span>
+                    <a class="btn-keluar my-2 my-sm-0 font-weight-bold" href="logout.php">Keluar</a>
                 </div>
-                <div class="hello d-flex mr-5">
-                <span class="my-2 my-sm-0 mr-1"><i class="fas fa-user-circle"></i></span>
-                <a class="my-2 my-sm-0 font-weight-bold" href="#">Hai,
-                    <?php echo  $_SESSION["user"]["nama"] ?>
-                </a>
-            </div>
-            <div class="d-flex ml-4 mr-4">
-                <span class="mr-1"><i class="fas fa-sign-out-alt"></i></span>
-                <a class="btn-keluar my-2 my-sm-0 font-weight-bold" href="logout.php">Keluar</a>
-            </div>
-
             </div>
         </ul>
         <!-- </div> -->
