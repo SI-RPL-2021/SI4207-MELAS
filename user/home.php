@@ -58,7 +58,7 @@
             Layanan
           </a>
           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">item 1</a>
+            <a class="dropdown-item" href="pengawalanperjalanan.php">Pengawalan Perjalanan</a>
             <a class="dropdown-item" href="#">item 2</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#">item 3</a>
