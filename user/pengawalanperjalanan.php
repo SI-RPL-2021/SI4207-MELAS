@@ -15,7 +15,7 @@
         crossorigin="anonymous" />
     <link rel="stylesheet" href="./css/style_user.css">
 </head>
-
+        
 <header>
     <nav class="navbar navbar-expand-lg navbar-light">
         <ul class="navbar-nav">
