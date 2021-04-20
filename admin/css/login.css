@@ -1,0 +1,238 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Poppins-Black.ttf");
+  font-weight: 900;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Poppins-Bold.ttf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Poppins-BlackItalic.ttf");
+  font-weight: 900;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Poppins-BoldItalic.ttf");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Poppins-ExtraBold.ttf");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Poppins-ExtraBoldItalic.ttf");
+  font-weight: 800;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Poppins-ExtraLight.ttf");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Poppins-ExtraLightItalic.ttf");
+  font-weight: 200;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Poppins-Italic.ttf");
+  font-style: italic;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Poppins-Light.ttf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Poppins-LightItalic.ttf");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Poppins-Medium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Poppins-MediumItalic.ttf");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Poppins-Regular.ttf");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Poppins-SemiBold.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Poppins-SemiBoldItalic.ttf");
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Poppins-Thin.ttf");
+  font-weight: 100;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Poppins-ThinItalic.ttf");
+  font-weight: 100;
+  font-style: italic;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  /* display: flex; */
+  height: 100vh;
+  width: 100%;
+}
+
+.main-body {
+  height: 95%;
+  display: flex;
+}
+
+.leftSide {
+  background: white;
+  flex: 5;
+}
+
+.leftSide .container {
+  margin-top: 30px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.leftSide .container .title {
+  display: flex;
+  /* align-items: center; */
+}
+
+.leftSide .container img {
+  height: 1.6rem;
+  object-fit: contain;
+  margin-right: 5px;
+}
+
+.leftSide .container h6 {
+  margin-top: 3rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+
+.leftSide .container .img-ilustrasi {
+  height: 25rem;
+  object-fit: contain;
+}
+
+.rightSide {
+  background: #1a4b6c;
+  flex: 6;
+}
+
+.rightSide .body-login {
+  color: white;
+  margin: auto;
+  width: 50%;
+  /* border: 1px solid black; */
+}
+
+.rightSide .body-login .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* text-align: center; */
+  /* color: black; */
+}
+
+.rightSide .body-login h5 {
+  margin-top: 5rem;
+  font-weight: bold;
+  /* text-align: center; */
+  font-size: 30px;
+  margin-bottom: 1;
+}
+
+.rightSide .btn-daftar {
+  padding: 7px;
+  width: 6rem;
+  text-decoration: none;
+  border-radius: 15px;
+  text-align: center;
+  color: black;
+  border: none;
+  font-weight: bold;
+  font-size: 13px;
+  margin-right: 30px;
+  margin-top: 30px;
+  float: right;
+  background: #dfec45;
+}
+
+.rightSide .body-login .form-login {
+  margin-top: 5rem;
+}
+.rightSide .body-login .form-login button {
+  margin-top: 3rem;
+  width: 40%;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-bottom: 2rem;
+  border: none;
+  border-radius: 20px;
+  color: black;
+  font-weight: 600;
+  background: #dfec45;
+}
+
+.rightSide .body-login .info {
+  display: flex;
+  justify-content: center;
+}
+
+.rightSide .body-login .info a {
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+/* .rightSide .body-login .info i {
+  background: none;
+} */
+
+.rightSide .body-login .form-login .form-group small {
+  /* color: white; */
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 5%;
+  border-top: 2px solid black;
+  font-weight: bold;
+  color: black;
+}
