@@ -23,6 +23,7 @@ if (isset($_POST['ajukan'])) {
     ":nama" => $nama,
     ":jenis" => $jenis,
     ":isi" => $isi
+    
   );
 
   // eksekusi query untuk menyimpan ke database
