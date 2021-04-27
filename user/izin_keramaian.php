@@ -55,7 +55,7 @@ if (isset($_POST['upload'])) {
         <img src="../berkas/contoh/IZIN-KERAMAIAN-2.jpg" alt="" srcset="">
       </div>
     </div>
-    <p class="text-center text-white">Contoh Surat Permohonan Pengawalan</p>
+    <p class="text-center text-white">Contoh Surat Permohonan Izin Keramaian</p>
     <div class="footer-keramaian d-flex justify-content-center mt-4">
       <div class="ajukan-upload">
         <h3 class="text-white">Ajukan Laporan</h3>
