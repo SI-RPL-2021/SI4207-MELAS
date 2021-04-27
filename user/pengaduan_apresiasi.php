@@ -23,7 +23,7 @@ if (isset($_POST['ajukan'])) {
     ":nama" => $nama,
     ":jenis" => $jenis,
     ":isi" => $isi
-    
+
   );
 
   // eksekusi query untuk menyimpan ke database
@@ -47,6 +47,8 @@ if (isset($_POST['ajukan'])) {
     <h6 class="text-white text-center mt-4">
       disini anda boleh membagikan keluhan ataupun apresiasi untuk kami
     </h6>
+
+
 
     <div class="pengaduan container mt-5 mb-4">
       <form method="POST" action="">
