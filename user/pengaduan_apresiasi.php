@@ -3,6 +3,7 @@ require_once('./includeVariabel.php');
 includeWithVariables('./layout/header.php', array('webTitle' => 'Pengaduan atau Apresiasi - MELAS'));
 require_once('../config.php');
 
+
 if (isset($_POST['ajukan'])) {
   // filter data yang diinputkan
   $jenis = filter_input(INPUT_POST, 'jenis', FILTER_SANITIZE_STRING);
