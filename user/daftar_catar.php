@@ -3,33 +3,26 @@ require_once('./includeVariabel.php');
 includeWithVariables('./layout/header.php', array('webTitle' => 'Pendaftaran Catar - MELAS'));
 require_once('../config.php');
 
-if (isset($_POST['ajukan'])) {
-  // filter data yang diinputkan
-  $jenis = filter_input(INPUT_POST, 'jenis', FILTER_SANITIZE_STRING);
-  $isi = filter_input(INPUT_POST, 'isi', FILTER_SANITIZE_STRING);
-  $id_user = $_SESSION['user']['id'];
+if (isset($_POST['daftarcatar'])) {
+  $idUser = $_SESSION['user']['id'];
+  $nama = $_POST['nama'];
+  $nik = $_POST['nik'];
+  $email = $_POST['email'];
+  $telepon = $_POST['telepon'];
+  $alamat = $_POST['alamat'];
+  $agama = $_POST['agama'];
+  $status = $_POST['status'];
+  $tinggi_badan = $_POST['tinggi_badan'];
+  $ttl = $_POST['ttl'];
+  $created_at = date('Y-m-d');
 
+  $query = "INSERT INTO tbl_pendaftar_catar (id_user,nama,nik,email,telepon,alamat,status,agama,tinggi_badan,ttl,created_at) VALUES ('$idUser','$nama','$nik','$email','$telepon','$alamat','$status','$agama','$tinggi_badan','$ttl','$created_at')";
 
-  // menyiapkan query
-  $sql = "INSERT INTO tbl_apresiasi_aduan (id_user, jenis, isi) 
-            VALUES (:id_user, :jenis, :isi)";
-  $stmt = $db->prepare($sql);
-
-  // bind parameter ke query
-  $params = array(
-    ":id_user" => $id_user,
-    ":jenis" => $jenis,
-    ":isi" => $isi
-  );
-
-  // eksekusi query untuk menyimpan ke database
-  $saved = $stmt->execute($params);
-
-  // jika query simpan berhasil, maka user sudah terdaftar
-  // maka alihkan ke halaman login
-  if ($saved) {
-    header("Location: list_pengaduan_apresiasi.php");
-  };
+  if (mysqli_query($koneksi, $query)) {
+    header('location:daftar_catar.php?alert=daftar_catar_berhasil');
+  } else {
+    die(mysqli_error($koneksi));
+  }
 }
 
 ?>
@@ -40,44 +33,97 @@ if (isset($_POST['ajukan'])) {
   </div>
 
   <section class="content d-flex flex-column">
+    <?php
+    include('../alert.php');
+    ?>
+    <div class="container container-detail-catar">
+      <form class="mt-5" method="post">
+        <div class="form-row">
 
-    <div class="container catar">
-      <div class="container-catar">
-        <div class="title">
-          <h5>REGULER POLA PEMBIBITAN</h5>
-          <h5>REGULER NON POLA PEMBIBITAN</h5>
+          <div class="form-group col-md-9">
+            <div class="form-group row col-md-5">
+              <label for="inputEmail4" class="text-white">Nama Lengkap</label>
+              <input type="text" name="nama" class="form-control" id="inputEmail4" placeholder="">
+            </div>
+            <div class="form-group col-md-4"></div>
+            <div class="form-group row col-md-5">
+              <label for="inputEmail4" class="text-white">NIK</label>
+              <input type="text" class="form-control" name="nik" id="inputEmail4" placeholder="">
+            </div>
+          </div>
+
+
+          <div class="form-group col-md-2">
+            <img src="../assets/polisi-ilustrasi-2.png" alt="" srcset="">
+          </div>
         </div>
-        <div class="body-login">
-          <form method="POST" action="daftar_catar_detail.php">
-            <div class="form-group">
-              <label for="exampleInputEmail1">NIK</label>
-              <input type="text" class="form-control" placeholder="NIK" name="nik">
-            </div>
-            <div class="form-group">
-              <label for="exampleInputEmail1">Password</label>
-              <input type="password" class="form-control" placeholder="Password" name="password">
-            </div>
-            <p>Pendaftaran untuk Reguler Pola Pembibitan dibuka pada 8 Janu 2021 dengan mengakses portal dikdin.bkn.go.id</p>
 
-            <div class="form-row d-flex mt-4" style="width:60%;">
-              <div class="form-group col-md-9">
-                <div class="custom-control col-md-6 custom-checkbox mt-2">
-                  <input type="checkbox" class="custom-control-input" id="customControlInline">
-                  <label class="custom-control-label" for="customControlInline">Remember</label>
-                </div>
-              </div>
-              <div class="form-group col-md-3">
-                <button type="submit" name="register" class="btn">Login</button>
-              </div>
-            </div>
 
-          </form>
+        <div class="form-row">
+          <!-- <div class="form-group col-md-4">
+            <label for="inputEmail4" class="text-white">Nama Lengkap</label>
+            <input type="text" name="nama" class="form-control" id="inputEmail4" required placeholder=""> -->
+          <!-- </div> -->
+          <div class="form-group col-md-4">
+            <label for="inputPassword4" class="text-white">Agama</label>
+            <input type="text" name="agama" class="form-control" id="inputPassword4" required placeholder="">
+          </div>
+          <div class="form-group col-md-4"></div>
+          <div class="form-group col-md-4">
+            <label for="inputPassword4" class="text-white">Status</label>
+            <input type="text" class="form-control" name="status" id="inputPassword4" required placeholder="">
+          </div>
         </div>
-      </div>
-      <div class="foto">
-        <img src="../assets/polisi-ilustrasi-2.png" alt="" srcset="">
-      </div>
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <label for="inputEmail4" class="text-white">Email</label>
+            <input type="email" name="email" class="form-control" id="inputEmail4" required placeholder="">
+          </div>
+          <div class="form-group col-md-4"></div>
+          <div class="form-group col-md-4">
+            <label for="inputPassword4" class="text-white">Tinggi Badan</label>
+            <div class="input-group">
+              <input type="number" name="tinggi_badan" class="form-control" id="inputPassword4" required placeholder="">
+              <div class="input-group-prepend">
+                <div class="input-group-text">CM</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <label for="inputEmail4" class="text-white">Telepon/HP</label>
+            <input type="number" name="telepon" class="form-control" id="inputEmail4" required placeholder="">
+          </div>
+          <div class="form-group col-md-4"></div>
+
+          <div class="form-group col-md-4">
+            <label for="inputPassword4" class="text-white">Tempat Tanggal Lahir</label>
+            <input type="text" name="ttl" class="form-control" id="inputPassword4" required placeholder="Contoh: Bandung, 10-10-1995">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <label for="inputEmail4" class="text-white">Alamat Domisili</label>
+            <input type="text" name="alamat" class="form-control" id="inputEmail4" required placeholder="">
+          </div>
+          <div class="form-group col-md-4"></div>
+
+          <div class="form-group col-md-4">
+            <label for="inputPassword4" class="text-white">Password</label>
+            <input type="password" name="password" class="form-control" id="inputPassword4" required placeholder="">
+          </div>
+        </div>
+
+
+        <div class="form-group">
+          <button type="submit" name="daftarcatar" class="btn btn-primary">Registrasi</button>
+        </div>
+      </form>
     </div>
+
+
 
   </section>
 </main>
