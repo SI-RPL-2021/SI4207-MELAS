@@ -6,7 +6,7 @@ require_once('../config.php');
 
 $data = mysqli_query($koneksi, "SELECT * FROM tbl_portal_berita order by time desc ");
 ?>
-
+ 
 <main>
   <div class="title-bar d-flex justify-content-center">
     <h2 class="text-white font-weight-bold">PORTAL BERITA</h2>

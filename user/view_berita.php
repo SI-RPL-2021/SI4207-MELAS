@@ -11,7 +11,7 @@ $result = mysqli_fetch_array($data);
 
 <main>
   <div class="title-bar d-flex justify-content-center">
-    <h2 class="text-white font-weight-bold">PORTAL BERITA</h2>
+    <h2 class="text-white font-weight-bold">PORTAL BERITA</h2>  
   </div>
 
   <section class="content d-flex flex-column">
