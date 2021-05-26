@@ -45,7 +45,6 @@ require_once('../config.php');
                 } else if ($result['keterangan'] == 'Ditolak') {
                 $ket = "<td>" . 'DITOLAK' . "</td>";
                 }
-
                 $link = $result['berkas'];
                 echo "<tr>";
                 echo "<td>" . $result['nama'] . "</td>";
