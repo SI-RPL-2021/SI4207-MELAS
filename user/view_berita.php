@@ -6,7 +6,7 @@ require_once('../config.php');
 
 $data = mysqli_query($koneksi, "SELECT * FROM tbl_portal_berita WHERE id = $_GET[id]");
 $result = mysqli_fetch_array($data);
- 
+  
 ?>  
 
 <main>

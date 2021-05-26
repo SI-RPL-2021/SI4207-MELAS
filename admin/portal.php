@@ -9,7 +9,7 @@ if (isset($_POST['upload'])) {
   $isi = $_POST['isi'];
   $judul = $_POST['judul'];
   $created_at = date("Y-m-d H-i-s");
- 
+  
   $rand = date("dmY");
   $ekstensi =  array('jpg', 'png', 'jpeg');
   $filename = $_FILES['img']['name'];
