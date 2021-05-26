@@ -1,0 +1,228 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Poppins-Black.ttf");
+  font-weight: 900;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Poppins-Bold.ttf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Poppins-BlackItalic.ttf");
+  font-weight: 900;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Poppins-BoldItalic.ttf");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Poppins-ExtraBold.ttf");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Poppins-ExtraBoldItalic.ttf");
+  font-weight: 800;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Poppins-ExtraLight.ttf");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Poppins-ExtraLightItalic.ttf");
+  font-weight: 200;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Poppins-Italic.ttf");
+  font-style: italic;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Poppins-Light.ttf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Poppins-LightItalic.ttf");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Poppins-Medium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Poppins-MediumItalic.ttf");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Poppins-Regular.ttf");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Poppins-SemiBold.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Poppins-SemiBoldItalic.ttf");
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Poppins-Thin.ttf");
+  font-weight: 100;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Poppins-ThinItalic.ttf");
+  font-weight: 100;
+  font-style: italic;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.topBar a {
+  color: black;
+  text-decoration: none;
+}
+
+main {
+  background: #245b80;
+  height: 95vh;
+}
+
+main .navbar {
+  padding: 15px;
+}
+
+main .navbar-nav {
+  font-size: 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo a {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.logo img {
+  height: 2rem;
+  object-fit: contain;
+}
+
+.carousel .carousel-item img {
+  height: 60vh;
+  width: 100%;
+  /* object-fit: contain; */
+  position: relative;
+}
+
+.carousel .carousel-inner .carousel-caption {
+  top: 60%;
+  transform: translateY(-50%);
+}
+
+.carousel .carousel-inner .carousel-caption h1 {
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.content p {
+  align-self: center;
+  color: white;
+  font-weight: 600;
+  max-width: 35%;
+  text-align: center;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.profiles {
+  background: #e9f7f6;
+  padding: 5rem 0;
+}
+
+.profiles .profile-wrapper div:first-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profiles .profile-wrapper div h2 {
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+.profiles .profile-wrapper div hr {
+  margin-bottom: 7rem;
+  width: 5rem;
+  display: block;
+  border-top: 5px solid #245b80;
+  padding: 0;
+}
+
+.profiles .profile-wrapper .one,
+.profiles .profile-wrapper .two {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.profiles .profile-wrapper .one div,
+.profiles .profile-wrapper .two div {
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profiles .profile-wrapper img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+.profiles .profile-wrapper h5 {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.profiles .profile-wrapper p {
+  font-weight: 500;
+}
+
+footer {
+  /* text-align: center; */
+
+  background: white;
+  height: 5%;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  border-top: 2px solid black;
+}

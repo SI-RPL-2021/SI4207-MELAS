@@ -1,0 +1,355 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Poppins-Black.ttf");
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Poppins-Bold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Poppins-BlackItalic.ttf");
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Poppins-BoldItalic.ttf");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Poppins-ExtraBold.ttf");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Poppins-ExtraBoldItalic.ttf");
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Poppins-ExtraLight.ttf");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Poppins-ExtraLightItalic.ttf");
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Poppins-Italic.ttf");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Poppins-Light.ttf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Poppins-LightItalic.ttf");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Poppins-Medium.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Poppins-MediumItalic.ttf");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Poppins-Regular.ttf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Poppins-SemiBold.ttf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Poppins-SemiBoldItalic.ttf");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Poppins-Thin.ttf");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Poppins-ThinItalic.ttf");
+  font-weight: 100;
+  font-style: italic;
+}
+
+/* Global Variabelv Warna */
+:root {
+  --bg-yellow: #fec111;
+  --bg-second-yellow: #dfec45;
+}
+
+/* Setting Default pada Page */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.logo2 {
+  display: flex;
+  align-items: center;
+}
+
+.logo2 a {
+  font-weight: bold;
+  font-size: 30px;
+  color: #245b80 !important;
+}
+
+.logo2 img {
+  height: 2rem;
+  object-fit: contain;
+}
+
+header .navbar {
+  background-color: var(--bg-yellow);
+  border: none;
+}
+
+.topBar a {
+  color: black;
+  text-decoration: none;
+}
+
+main {
+  background: #245b80;
+  min-height: 90vh;
+}
+
+main .title-bar {
+  padding: 5px;
+  background: #ec4545;
+}
+
+main .navbar-nav {
+  font-size: 20px;
+}
+
+.content {
+  padding: 0 0 5rem;
+}
+
+/* Judul Halaman (Data Portal Berita, dll) */
+.content h6 {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* style untuk tiap class button-submit */
+.button-submit {
+  background-color: var(--bg-yellow);
+  min-width: 5rem;
+  padding: 3px 10px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 30px;
+  outline: none;
+  border: 1px solid black;
+  text-decoration: none;
+  color: black;
+}
+
+.button-submit:active {
+  outline: none;
+}
+
+.button-submit:focus {
+  outline: none;
+}
+
+/* End style untuk tiap class button-submit */
+
+/* STYLE UNTUK TIAP TABLE */
+/* Background blur pada tiap table */
+.respon-pengawalan {
+  background: #527389;
+  padding: 20px;
+  margin-top: 3rem;
+}
+
+.tbl_respon {
+  border: 1px solid black;
+}
+
+.tbl_respon th {
+  border: 2px solid black;
+  border-bottom: 1px solid black;
+}
+
+.tbl_respon td {
+  border: 1px solid black;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+}
+
+.tbl_respon td .isiBerita {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.tbl_respon td .isiBerita a {
+  color: black;
+  text-decoration: none;
+}
+
+.tableTitle {
+  color: #245b80;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: -20px;
+  text-align: center;
+  text-shadow: 1px 1px 0 white, -1px 1px 0 white, 1px -1px 0 white,
+    -1px -1px 0 white, 0px 1px 0 white, 0px -1px 0 white, -1px 0px 0 white,
+    1px 0px 0 white, 2px 2px 0 white, -2px 2px 0 white, 2px -2px 0 white,
+    -2px -2px 0 white, 0px 2px 0 white, 0px -2px 0 white, -2px 0px 0 white,
+    2px 0px 0 white, 1px 2px 0 white, -1px 2px 0 white, 1px -2px 0 white,
+    -1px -2px 0 white, 2px 1px 0 white, -2px 1px 0 white, 2px -1px 0 white,
+    -2px -1px 0 white;
+}
+
+/* Setting DataTables */
+.dataTables_filter {
+  float: right !important;
+}
+
+.dataTables_wrapper .dataTables_paginate {
+  float: left;
+  padding-top: 0.25em;
+}
+
+/* End Setting DataTables */
+
+/* STYLE UNTUK TIAP TABLE */
+
+
+/* Style pada table sim, stnk, skck */
+#table_sim,
+#table_stnk,
+#table_skck {
+  color: #245b80;
+  font-weight: bold;
+}
+
+/* untuk menyembunyikan item */
+.hidden {
+  display: none;
+}
+
+/* HALAMAN DATA SIM, STNK, SKCK */
+/* Pilihan Button (SIM, STNK, SKCK) */
+.data_sim {
+  padding: 20px;
+  margin-top: 1rem;
+}
+
+.data_sim a {
+  cursor: pointer;
+  color: black;
+  background: var(--bg-second-yellow);
+  margin-right: 1.5rem;
+  border-radius: 20px !important;
+  width: 8rem;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 3px 0;
+}
+
+.clickable-row {
+  cursor: pointer;
+}
+
+/* END HALAMAN DATA SIM, STNK, SKCK */
+
+/* HALAMAN PORTAL BERITA DATA */
+/* style pada gambar di table portal berita */
+.img-table {
+  height: 2rem;
+  width: 4rem;
+}
+
+/* tombol tambah berita di table */
+.tambah-berita {
+  margin-left: 1rem !important;
+  background: var(--bg-second-yellow);
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.tambah-berita:hover {
+  background: #fec111;
+}
+
+.tambah-berita a {
+  color: black;
+}
+
+/* END HALAMAN PORTAL BERITA DATA */
+
+
+/* button unduh berkas pada table */
+.btn-unduh {
+  background: #1a4b6c;
+  color: white;
+  padding: 5px 13px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+footer {
+  background: white;
+  height: 2rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  border-top: 2px solid black;
+}
