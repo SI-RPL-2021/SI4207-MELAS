@@ -2,7 +2,7 @@
 require_once('./includeVariabel.php');
 includeWithVariables('./layout/header.php', array('webTitle' => 'Form Pembayaran - MELAS'));
 require_once('../config.php');
-##require_once('./func_bayar.php');
+require_once('./func_bayar.php');
 
 if (isset($_POST['transaksiBank'])) {
   $metode_bayar = $_POST['bank'];
