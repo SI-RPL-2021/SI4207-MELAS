@@ -34,9 +34,10 @@ if (isset($_POST['register'])) {
     echo "
     <script>
       alert('Registrasi Berhasil, Silakan Login!');
+      window.location = 'index.php';
     </script>
     ";
-    header("Location: index.php");
+    // header("Location: index.php");
   };
 }
 ?>
@@ -49,8 +50,11 @@ if (isset($_POST['register'])) {
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Registrasi</title>
+  <link rel="icon" type="image/png" href="./assets/logo.png" />
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+
   <link rel="stylesheet" href="registrasi.css">
 </head>
 

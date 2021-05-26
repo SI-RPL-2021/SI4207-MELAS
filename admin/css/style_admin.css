@@ -3,110 +3,93 @@
   src: url("../../assets/fonts/Poppins-Black.ttf");
   font-weight: 900;
 }
-
 @font-face {
   font-family: "Poppins";
   src: url("../../assets/fonts/Poppins-Bold.ttf");
   font-weight: bold;
 }
-
 @font-face {
   font-family: "Poppins";
   src: url("../../assets/fonts/Poppins-BlackItalic.ttf");
   font-weight: 900;
   font-style: italic;
 }
-
 @font-face {
   font-family: "Poppins";
   src: url("../../assets/fonts/Poppins-BoldItalic.ttf");
   font-weight: bold;
   font-style: italic;
 }
-
 @font-face {
   font-family: "Poppins";
   src: url("../../assets/fonts/Poppins-ExtraBold.ttf");
   font-weight: 800;
 }
-
 @font-face {
   font-family: "Poppins";
   src: url("../../assets/fonts/Poppins-ExtraBoldItalic.ttf");
   font-weight: 800;
   font-style: italic;
 }
-
 @font-face {
   font-family: "Poppins";
   src: url("../../assets/fonts/Poppins-ExtraLight.ttf");
   font-weight: 200;
 }
-
 @font-face {
   font-family: "Poppins";
   src: url("../../assets/fonts/Poppins-ExtraLightItalic.ttf");
   font-weight: 200;
   font-style: italic;
 }
-
 @font-face {
   font-family: "Poppins";
   src: url("../../assets/fonts/Poppins-Italic.ttf");
   font-style: italic;
 }
-
 @font-face {
   font-family: "Poppins";
   src: url("../../assets/fonts/Poppins-Light.ttf");
   font-weight: 300;
 }
-
 @font-face {
   font-family: "Poppins";
   src: url("../../assets/fonts/Poppins-LightItalic.ttf");
   font-weight: 300;
   font-style: italic;
 }
-
 @font-face {
   font-family: "Poppins";
   src: url("../../assets/fonts/Poppins-Medium.ttf");
   font-weight: 500;
 }
-
 @font-face {
   font-family: "Poppins";
   src: url("../../assets/fonts/Poppins-MediumItalic.ttf");
   font-weight: 500;
   font-style: italic;
 }
-
 @font-face {
   font-family: "Poppins";
   src: url("../../assets/fonts/Poppins-Regular.ttf");
   font-weight: normal;
 }
-
 @font-face {
   font-family: "Poppins";
   src: url("../../assets/fonts/Poppins-SemiBold.ttf");
   font-weight: 600;
 }
-
 @font-face {
   font-family: "Poppins";
   src: url("../../assets/fonts/Poppins-SemiBoldItalic.ttf");
   font-weight: 600;
   font-style: italic;
 }
-
 @font-face {
   font-family: "Poppins";
   src: url("../../assets/fonts/Poppins-Thin.ttf");
   font-weight: 100;
 }
-
 @font-face {
   font-family: "Poppins";
   src: url("../../assets/fonts/Poppins-ThinItalic.ttf");
@@ -114,13 +97,11 @@
   font-style: italic;
 }
 
-/* Global Variabelv Warna */
 :root {
   --bg-yellow: #fec111;
   --bg-second-yellow: #dfec45;
 }
 
-/* Setting Default pada Page */
 * {
   margin: 0;
   padding: 0;
@@ -167,18 +148,84 @@ main .navbar-nav {
   font-size: 20px;
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo a {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.logo img {
+  height: 2rem;
+  object-fit: contain;
+}
+
 .content {
   padding: 0 0 5rem;
 }
 
-/* Judul Halaman (Data Portal Berita, dll) */
 .content h6 {
   max-width: 80%;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* style untuk tiap class button-submit */
+.content .list-portal {
+  align-self: center;
+  width: 85%;
+  /* background: red; */
+}
+
+.content .card-berita {
+  margin-top: 1rem;
+  border: 2px solid black;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 10px;
+  background: #c4c4c4;
+}
+
+.content .card-berita p {
+  font-weight: bold;
+  font-size: 20px;
+  display: block;
+  width: 80%;
+  margin-left: 1rem;
+  /* overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; */
+}
+
+.content .card-berita p {
+  font-weight: bold;
+  font-size: 20px;
+  display: block;
+  width: 80%;
+  margin-left: 1rem;
+  /* overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; */
+}
+
+.content .card-berita img {
+  margin-right: 1rem;
+  border: 2px solid black;
+  height: 7rem;
+  width: 20%;
+}
+
+.content .list-portal a {
+  color: white;
+  align-self: flex-end;
+  margin-top: 2rem;
+  font-size: 600;
+  text-decoration: none;
+}
+
 .button-submit {
   background-color: var(--bg-yellow);
   min-width: 5rem;
@@ -200,15 +247,239 @@ main .navbar-nav {
   outline: none;
 }
 
-/* End style untuk tiap class button-submit */
+.item-pengaduan .button {
+  margin-top: 1.5rem;
+  justify-content: space-between;
+  /* background-color: red; */
+  width: 95%;
+}
 
-/* STYLE UNTUK TIAP TABLE */
-/* Background blur pada tiap table */
+.item-pengaduan .content-pengaduan {
+  background-color: #c4c4c4;
+  /* margin: 1.5rem 2rem 1.5rem; */
+  width: 95%;
+  margin-top: 2rem;
+  padding: 1rem;
+  min-height: 60vh;
+}
+
+.item-pengaduan .content-pengaduan h5 {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.item-pengaduan .content-pengaduan .text {
+  /* background-color: red; */
+  margin-top: 7%;
+  margin-bottom: 7%;
+}
+
+blockquote::before {
+  content: open-quote;
+}
+blockquote::after {
+  content: close-quote;
+}
+blockquote {
+  quotes: "“" "”" "‘" "’";
+  text-indent: -0.45em;
+  max-width: 60%;
+  /* text-align: justify; */
+  font-weight: bold;
+  font-size: 1.2rem;
+  /* border-left: 2px solid red; */
+}
+
+@supports (hanging-punctuation: first) {
+  blockquote {
+    text-indent: 0;
+    hanging-punctuation: first;
+  }
+}
+
+.contoh-laporan {
+  margin-top: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .contoh-laporan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.contoh-laporan .contoh1,
+.contoh2 {
+  background-color: white;
+  height: 30rem;
+  width: 55vh;
+  margin-bottom: 1rem;
+}
+
+.footer-pengawalan {
+  margin-right: 20%;
+  margin-left: 20%;
+  margin-bottom: 2rem;
+}
+
+.footer-pengawalan .ajukan-upload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.425);
+  padding: 10px;
+  width: 50vh;
+  margin-bottom: 1rem;
+}
+
+.footer-pengawalan .ajukan-upload form {
+  margin-top: 1rem;
+}
+
+/* .footer-pengawalan .ajukan-upload h3 {
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+} */
+
+.footer-pengawalan .ajukan-upload form a {
+  margin-top: 1.5rem;
+  background: #1a4b6c;
+  padding: 2px 25px;
+  color: black;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.footer-pengawalan .catatan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.425);
+  padding: 20px 10px;
+  width: 50vh;
+  margin-bottom: 1rem;
+}
+
+.footer-keramaian {
+  margin-bottom: 2rem;
+}
+
+.footer-keramaian .ajukan-upload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.425);
+  padding: 10px;
+  width: 60%;
+  margin-bottom: 1rem;
+}
+
+.footer-keramaian .ajukan-upload .button {
+  display: flex;
+  justify-content: center;
+}
+.footer-keramaian .ajukan-upload .button a {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background: #1a4b6c;
+  padding: 4px 55px;
+  color: black;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .footer-keramaian .ajukan-upload .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-keramaian .ajukan-upload {
+    width: 90%;
+  }
+
+  .footer-keramaian .ajukan-upload .row .col-5 {
+    width: 100%;
+  }
+  /* 
+  .footer-keramaian .ajukan-upload .row .form-group {
+    width: 100% !important;
+  } */
+}
+
 .respon-pengawalan {
   background: #527389;
   padding: 20px;
   margin-top: 3rem;
 }
+
+#table_sim,
+#table_stnk,
+#table_skck {
+  color: #245b80;
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
+
+.data_sim {
+  padding: 20px;
+  margin-top: 1rem;
+}
+
+.data_sim a {
+  cursor: pointer;
+  color: black;
+  background: var(--bg-second-yellow);
+  margin-right: 1.5rem;
+  border-radius: 20px !important;
+  width: 8rem;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 3px 0;
+}
+
+.img-table {
+  height: 2rem;
+  width: 4rem;
+}
+
+.tambah-berita {
+  margin-left: 1rem !important;
+  background: var(--bg-second-yellow);
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.tambah-berita:hover {
+  background: #fec111;
+}
+
+.tambah-berita a {
+  color: black;
+}
+
+.dataTables_wrapper .dataTables_paginate {
+  float: left;
+  padding-top: 0.25em;
+}
+
+.clickable-row {
+  cursor: pointer;
+}
+
+/* .clickable-row:hover {
+  background: #527389;
+} */
 
 .tbl_respon {
   border: 1px solid black;
@@ -226,10 +497,11 @@ main .navbar-nav {
 }
 
 .tbl_respon td .isiBerita {
+  /* max-width: 50%; */
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 2; /* number of lines to show */
   -webkit-box-orient: vertical;
 }
 
@@ -252,91 +524,10 @@ main .navbar-nav {
     -1px -2px 0 white, 2px 1px 0 white, -2px 1px 0 white, 2px -1px 0 white,
     -2px -1px 0 white;
 }
-
-/* Setting DataTables */
 .dataTables_filter {
   float: right !important;
 }
 
-.dataTables_wrapper .dataTables_paginate {
-  float: left;
-  padding-top: 0.25em;
-}
-
-/* End Setting DataTables */
-
-/* STYLE UNTUK TIAP TABLE */
-
-
-/* Style pada table sim, stnk, skck */
-#table_sim,
-#table_stnk,
-#table_skck {
-  color: #245b80;
-  font-weight: bold;
-}
-
-/* untuk menyembunyikan item */
-.hidden {
-  display: none;
-}
-
-/* HALAMAN DATA SIM, STNK, SKCK */
-/* Pilihan Button (SIM, STNK, SKCK) */
-.data_sim {
-  padding: 20px;
-  margin-top: 1rem;
-}
-
-.data_sim a {
-  cursor: pointer;
-  color: black;
-  background: var(--bg-second-yellow);
-  margin-right: 1.5rem;
-  border-radius: 20px !important;
-  width: 8rem;
-  font-weight: bold;
-  font-size: 15px;
-  padding: 3px 0;
-}
-
-.clickable-row {
-  cursor: pointer;
-}
-
-/* END HALAMAN DATA SIM, STNK, SKCK */
-
-/* HALAMAN PORTAL BERITA DATA */
-/* style pada gambar di table portal berita */
-.img-table {
-  height: 2rem;
-  width: 4rem;
-}
-
-/* tombol tambah berita di table */
-.tambah-berita {
-  margin-left: 1rem !important;
-  background: var(--bg-second-yellow);
-  width: 2rem;
-  height: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 5px;
-}
-
-.tambah-berita:hover {
-  background: #fec111;
-}
-
-.tambah-berita a {
-  color: black;
-}
-
-/* END HALAMAN PORTAL BERITA DATA */
-
-
-/* button unduh berkas pada table */
 .btn-unduh {
   background: #1a4b6c;
   color: white;

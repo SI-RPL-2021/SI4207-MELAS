@@ -1,6 +1,6 @@
 <?php
 
-$db_host = "127.0.0.1:3307";
+$db_host = "";
 $db_user = "root";
 $db_pass = "";
 $db_name = "db_melas";

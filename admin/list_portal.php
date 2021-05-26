@@ -4,13 +4,13 @@ includeWithVariables('./layout/header.php', array('webTitle' => 'Portal Berita -
 require_once('../config.php');
 
 if (isset($_POST['ubah'])) {
-  $rand = date("dmYHis");
+  $rand = date("dmYHis");   
   $ekstensi =  array('png', 'jpg', 'jpeg');
-  $filename = $_FILES['img']['name'];
+  $filename = $_FILES['img']['name']; 
   $ukuran = $_FILES['img']['size'];
   $ext = pathinfo($filename, PATHINFO_EXTENSION);
-
-  $judul = $_POST['judul'];
+ 
+  $judul = $_POST['judul']; 
   $isi = $_POST['isi'];
   $idBerita = $_POST['id'];
 
