@@ -4,7 +4,7 @@ includeWithVariables('./layout/header.php', array('webTitle' => 'Portal Berita -
 
 require_once('../config.php');
 
-$data = mysqli_query($koneksi, "SELECT * FROM tbl_portal_berita order by time desc LIMIT 3");
+$data = mysqli_query($koneksi, "SELECT * FROM tbl_portal_berita order by time desc ");
 ?>
 
 <main>
@@ -24,7 +24,7 @@ $data = mysqli_query($koneksi, "SELECT * FROM tbl_portal_berita order by time de
       } ?>
 
 
-      <a href="portals.php" class="">lebih lanjut...</a>
+      <!-- <a href="#" class="">lebih lanjut...</a> -->
 
     </div>
 
