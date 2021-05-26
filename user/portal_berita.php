@@ -2,10 +2,10 @@
 require_once('./includeVariabel.php');
 includeWithVariables('./layout/header.php', array('webTitle' => 'Portal Berita - MELAS'));
 
-require_once('../config.php');
+require_once('../config.php'); 
 
 $data = mysqli_query($koneksi, "SELECT * FROM tbl_portal_berita order by time desc LIMIT 3");
-?> 
+?>     
 
 <main>
   <div class="title-bar d-flex justify-content-center">
