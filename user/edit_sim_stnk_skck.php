@@ -204,8 +204,7 @@ if (isset($_POST['update'])) {
   header('location:pembuatan_sim_stnk_skck.php');
 } else if (isset($_POST['hapus_data'])) {
   $id = $_POST['id'];
-  mysqli_query($koneksi, "DELETE FROM tbl_sim_stnk_skck WHERE id = '$id'");
-  header('location:pembuatan_sim_stnk_skck.php?alert=hapus_sim_stnk_skck');
+  header('location:delete_sim_stnk_skck.php?id=' . $id);
 }
 
 ?>
